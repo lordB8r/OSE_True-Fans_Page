@@ -1,0 +1,26 @@
+3 Key data aspects needed:
+	Either Youtube video link, or video to post to Youtube
+	Users true fan user-name
+	Thumbnail for video
+
+Key details need to know:
+	How do we retrieve these videos?
+		Do the users upload them to some sort of database?
+		Do they upload them to Youtube themselves, and then send the link to an admin?
+		Do they send the video to an Admin to start off with? And then they put them in some sort of data-structure?
+		Or do the admins just receive links to the videos and store them in a spreadsheet?
+
+	How do we correlate the videos to user-names?
+		Are user names and videos paired in a spreadsheet? Database Relation?
+	
+	How should we choose the thumbnail for the video on the website?
+		Are they chosen, and sent in to an Admin by the user?
+		Does the Admin go through the video and choose a snippet him/herself?
+		Or are they random pictures that the user sends in to the Admin with the video?
+
+	How should navigation work?
+		Should the images on the webpage be embedded videos?
+		Should they be links to a Youtube page? Or should they take you to that user's true-fan page (where the video link will be)?
+		Are those links at the top (the OSE partners) links to their websites? Or are they just stating who their partners are? 
+		Should there be a navigation to a "contact us" page?
+		Should the Join button open a form, or should it redirect the user?
