@@ -22,6 +22,7 @@ function init()
 function openMenu()
 {
 	var abottom = document.getElementById("bottom");
+	var buttons = document.getElementById("tableButtons");
 	switch(browserID)
 	{
 		case 0: //Chrome, Safari
@@ -29,11 +30,16 @@ function openMenu()
 			{
 				abottom.style.webkitAnimationName = "slideUp";
 				abottom.style.webkitAnimationPlayState ="running";
+				buttons.style.webkitAnimationName = "fadeOut";
+				buttons.style.webkitAnimationDelay = "0s";
+				buttons.style.webkitAnimationPlayState ="running";
 			}
 			else
 			{
 				abottom.style.webkitAnimationName = "slideDown";
 				abottom.style.webkitAnimationPlayState ="running";
+				buttons.style.webkitAnimationName = "fadeIn";
+				buttons.style.webkitAnimationPlayState ="running";
 			}
 			break;
 
@@ -42,11 +48,16 @@ function openMenu()
 			{
 				abottom.style.animationName = "slideUp";
 				abottom.style.animationPlayState ="running";
+				buttons.style.animationName = "fadeOut";
+				buttons.style.animationDelay = "0s";
+				buttons.style.animationPlayState ="running";
 			}
 			else
 			{
 				abottom.style.animationName = "slideDown";
 				abottom.style.animationPlayState ="running";
+				buttons.style.animationName = "fadeIn";
+				buttons.style.animationPlayState ="running";
 			}
 			break;
 		case 2: //Firefox 5.0-15.0 
@@ -54,11 +65,16 @@ function openMenu()
 			{
 				abottom.style.mozAnimationName = "slideUp";
 				abottom.style.mozAnimationPlayState ="running";
+				buttons.style.mozAnimationDelay = "0s";
+				buttons.style.mozAnimationName = "fadeOut";
+				buttons.style.mozAnimationPlayState ="running";
 			}
 			else
 			{
 				abottom.style.mozAnimationName = "slideDown";
 				abottom.style.mozAnimationPlayState ="running";
+				buttons.style.mozAnimationName = "fadeIn";
+				buttons.style.mozAnimationPlayState ="running";
 			}
 			break;
 		
