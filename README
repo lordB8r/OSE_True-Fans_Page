@@ -1,1 +1,5 @@
 OSE Website
+
+TODO:   +Get resizing to work dynamically
+	+Get table populated with Youtube videos
+		-Use links from spreadsheet (via Google-Drive API)
