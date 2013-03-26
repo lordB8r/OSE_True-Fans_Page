@@ -1,4 +1,10 @@
-#top
+html
+{
+	background-color: #BBBBBB;
+	size: 100% 100%;
+}
+
+div#top
 {
 	position: fixed;
 	top: 0px; left: 0px;
@@ -14,9 +20,10 @@
 	background-size: 100% 100%;
 }
 
-#bottom
+div#bottom
 {
-	position: absolute;
+	position: fixed;
+	overflow: scroll;
 	top: 45%; left: 0px;
 	width: 100%;
 	height: 65%;
@@ -44,31 +51,40 @@
 
 }
 
-@keyframes slideDown{from{top:45%;}to{top:70%;}}
-@keyframes slideUp{from{top:70%;}to{top:45%;}}
-@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-@keyframes fadeOut{from{opacity:1;}to{opacity:0;}}
-
-@-webkit-keyframes slideDown{from{top:45%;}to{top:70%;}}
-@-webkit-keyframes slideUp{from{top:70%;}to{top:45%;}}
-@-webkit-keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-@-webkit-keyframes fadeOut{from{opacity:1;}to{opacity:0;}}
-
-@-moz-keyframes slideDown{from{top:45%;}to{top:70%;}}
-@-moz-keyframes slideUp{from{top:70%;}to{top:45%;}}
-@-moz-keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-@-moz-keyframes fadeOut{from{opacity:1;}to{opacity:0;}}	
-	
-#joinus
+div#title
 {
-	display: block;
-	width: 15%;
-	height: 15%;
-    	margin-left: auto; 
-    	margin-right: auto;
+	position: absolute;
+	top: 0;left: 22%;
+
+	font-size: 500%;
+	font-weight: bold;
+
+	color: white;
 }
 
-#oshlogo
+div#firstSub
+{
+	position: absolute;
+	top: 30%;
+	left: 28%;
+
+	font-size: 175%;
+	text-align: center;
+	color: white;
+}
+
+div#secondSub
+{
+	position: absolute;
+	top: 58%;
+	left: 13%;
+
+	font-size: 175%;
+	text-align: center;
+	color: white;
+}
+
+img#oshlogo
 {
 	display: block;
 	width: 20%;
@@ -77,16 +93,16 @@
     	margin-right: auto;
 }
 
-#wikilogo
+img#wikilogo
 {
 	display: block;
 	width: 25%;
-	height: 25%;
+	height: 20%;
     	margin-left: auto; 
     	margin-right: auto;
 }
 
-#tedlogo
+img#tedlogo
 {	
 	display: block;	
 	width: 30%;
@@ -95,7 +111,7 @@
     	margin-right: auto;
 }
 
-#sworthlogo
+img#sworthlogo
 {
 	display: block;
 	width: 50%;
@@ -104,49 +120,69 @@
     	margin-right: auto;
 }
 
-#title
+span#trueFans
 {
-	font-size: 80px;
-	color: white;
-	text-align: center;
-	font-weight: bold;
-}
-
-#trueFans
-{
-	font-size: 28px;
+	font-size: 155%;
 	color: #37B6CE;
 	font-weight: bold;
 }
 
-div.subtitle
+input#joinUsButton:hover
 {
-	font-size: 25px;
-	text-align: center;
-	color: white;
+	animation: fade 0.25s forwards;
+	-webkit-animation: fade 0.25s forwards;
+	-moz-animation: fade 0.25s forwards;
+}
+	
+input#joinUsButton
+{
+	position: absolute;
+	display: block;
+	width: 15%;
+	height: 15%;
+	top: 46%;
+	left: 42%;
+}
+
+
+input.menuButton
+{
+	display: block;
+	width: 35%;
+	height: 60%;
+    	margin-left: auto; 
+    	margin-right: auto;
+}
+
+input.menuButton:hover
+{
+	animation: fade 0.25s forwards;
+	-webkit-animation: fade 0.25s forwards;
+	-moz-animation: fade 0.25s forwards;
 }
 
 table.sponsers
 {
+	position: absolute;
+	bottom: 0%;
+
 	table-layout: fixed;
 	border-spacing: 0px;
+
 	margin-left: auto;
 	margin-right: auto;
-	width: 48%
+}
+
+table.sponsers td.sponserCell:hover
+{
+	animation: fade 0.25s forwards;
+	-webkit-animation: fade 0.25s forwards;
+	-moz-animation: fade 0.25s forwards;
 }
 
 table.sponsers td.sponserCell
 {
 	width: 12%;	
-}
-
-.joinUsButton
-{
-	display: block;
-	width: 35%;
-	height: 35%;
-    	margin-left: auto; 
-    	margin-right: auto;
 }
 
 table.buttons
@@ -156,6 +192,7 @@ table.buttons
 	table-layout: fixed;
 	border-spacing: 0px;
 	width: 66%;
+	height: 20%;
 	top: 48%;
 	margin-left: 15%;
 
@@ -179,18 +216,48 @@ table.buttons
 	-moz-animation-fill-mode: forwards;
 }
 
-table.buttons td.textCell
+table.buttons td.buttonCell
 {
+	height: 25%;
+	width: 22%;
+	padding: 0px;
 	text-align: center;
 }
 
-table.buttons td.buttonCell
-{
-	width: 22%;	
-}
+@media screen and (max-width: 200px){div#title{font-size: 75%; left: 21%; top: 15%;} div#firstSub{font-size: 35%; left: 14%; top: 25%;} div#secondSub{font-size: 35%; left: 0%; top: 45%;} span#trueFans{font-size: 55%;} input#joinUsButton{height: 5%; top: 33%;}}
+@media screen and (min-width: 200px) and (max-width: 250px){div#title{font-size: 75%; left: 23%; top: 15%;} div#firstSub{font-size: 35%; left: 18%; top: 25%;} div#secondSub{font-size: 35%; left: 0%; top: 45%;} span#trueFans{font-size: 55%;} input#joinUsButton{height: 5%; top: 33%;}}
+@media screen and (min-width: 250px) and (max-width: 300px){div#title{font-size: 100%; left: 21%; top: 15%;} div#firstSub{font-size: 65%; left: 8%; top: 25%;} div#secondSub{font-size: 65%; left: 0%; top: 45%;} span#trueFans{font-size: 70%;} input#joinUsButton{height: 8%; top: 33%;}}
+@media screen and (min-width: 300px) and (max-width: 350px){div#title{font-size: 125%; left: 20%; top: 15%;} div#firstSub{font-size: 80%; left: 8%; top: 25%;} div#secondSub{font-size: 80%; left: 0%; top: 45%;} span#trueFans{font-size: 85%;} input#joinUsButton{height: 8%; top: 33%;}}
+@media screen and (min-width: 350px) and (max-width: 400px){div#title{font-size: 150%; left: 20%; top: 15%;} div#firstSub{font-size: 95%; left: 6%; top: 25%;} div#secondSub{font-size: 95%; left: 0%; top: 45%;} span#trueFans{font-size: 100%;} input#joinUsButton{height: 8%; top: 34%;}}
+@media screen and (min-width: 400px) and (max-width: 450px){div#title{font-size: 225%; left: 10%; top: 13%;} div#firstSub{font-size: 110%; left: 6%; top: 30%;} div#secondSub{font-size: 110%; left: 0%; top: 55%;} span#trueFans{font-size: 115%;} input#joinUsButton{height: 10%; top: 42%;}}
+@media screen and (min-width: 450px) and (max-width: 500px){div#title{font-size: 250%; left: 10%; top: 13%;} div#firstSub{font-size: 125%; left: 6%; top: 30%;} div#secondSub{font-size: 125%; left: 0%; top: 55%;} span#trueFans{font-size: 130%;} input#joinUsButton{height: 10%; top: 42%;}}
+@media screen and (min-width: 500px) and (max-width: 550px){div#title{font-size: 275%; left: 13%; top: 11%;} div#firstSub{font-size: 140%; left: 8%; top: 30%;} div#secondSub{font-size: 140%; left: 0%; top: 55%;} span#trueFans{font-size: 145%;} input#joinUsButton{height: 10%; top: 44%;}}
+@media screen and (min-width: 550px) and (max-width: 600px){div#title{font-size: 300%; left: 11%; top: 5%;} div#firstSub{font-size: 155%; left: 6%; top: 25%;} div#secondSub{font-size: 155%; left: 0%; top: 45%;} span#trueFans{font-size: 160%;} input#joinUsButton{height: 10%; top: 38%;}}
+@media screen and (min-width: 600px) and (max-width: 650px){div#title{font-size: 325%; left: 11%; top: 2%;} div#firstSub{font-size: 155%; left: 10%; top: 25%;} div#secondSub{font-size: 155%; left: 0%; top: 45%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 38%;}}
+@media screen and (min-width: 650px) and (max-width: 700px){div#title{font-size: 350%; left: 11%; top: 2%;} div#firstSub{font-size: 155%; left: 12%; top: 25%;} div#secondSub{font-size: 155%; left: 0%; top: 45%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 38%;}}
+@media screen and (min-width: 700px) and (max-width: 750px){div#title{font-size: 375%; left: 11%; top: 2%;} div#firstSub{font-size: 170%; left: 10%; top: 25%;} div#secondSub{font-size: 170%; left: 0%; top: 45%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 38%;}}
+@media screen and (min-width: 750px) and (max-width: 800px){div#title{font-size: 400%; left: 13%; top: 2%;} div#firstSub{font-size: 170%; left: 15%; top: 25%;} div#secondSub{font-size: 170%; left: 0%; top: 45%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 38%;}}
+@media screen and (min-width: 800px) and (max-width: 850px){div#title{font-size: 425%; left: 13%; top: 2%;} div#firstSub{font-size: 170%; left: 15%; top: 28%;} div#secondSub{font-size: 170%; left: 0%; top: 48%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 40%;}}
+@media screen and (min-width: 850px) and (max-width: 900px){div#title{font-size: 450%; left: 13%; top: 2%;}  div#firstSub{font-size: 170%; left: 18%; top: 28%;} div#secondSub{font-size: 170%; left: 0%; top: 48%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 40%;}}
+@media screen and (min-width: 900px) and (max-width: 950px){div#title{font-size: 475%; left: 13%; top: 0%;} div#firstSub{font-size: 170%; left: 18%; top: 30%;} div#secondSub{font-size: 170%; left: 0%; top: 48%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 42%;}}
+@media screen and (min-width: 950px) and (max-width: 1000px){div#title{font-size: 475%; left: 13%; top: 0%;} div#firstSub{font-size: 170%; left: 18%; top: 30%;} div#secondSub{font-size: 170%; left: 2%; top: 48%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 42%;}}
+@media screen and (min-width: 1000px) and (max-width: 1050px){div#title{font-size: 475%; left: 15%; top: 0%;} div#firstSub{font-size: 170%; left: 20%; top: 30%;} div#secondSub{font-size: 170%; left: 2%; top: 48%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 42%;}}
+@media screen and (min-width: 1050px) and (max-width: 1100px){div#title{font-size: 475%; left: 20%; top: 0%;} div#firstSub{font-size: 170%; left: 27%; top: 30%;} div#secondSub{font-size: 170%; left:8%; top: 55%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 45%;}}
 
-html
-{
-	background-color: #DDDDDD;
-	background-size: 100% 100%;
-}
+@keyframes slideDown{from{top:45%;}to{top:70%;}}
+@keyframes slideUp{from{top:70%;}to{top:45%;}}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+@keyframes fadeOut{from{opacity:1;}to{opacity:0;}}
+@keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
+
+@-webkit-keyframes slideDown{from{top:45%;}to{top:70%;}}
+@-webkit-keyframes slideUp{from{top:70%;}to{top:45%;}}
+@-webkit-keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+@-webkit-keyframes fadeOut{from{opacity:1;}to{opacity:0;}}
+@-webkit-keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
+
+@-moz-keyframes slideDown{from{top:45%;}to{top:70%;}}
+@-moz-keyframes slideUp{from{top:70%;}to{top:45%;}}
+@-moz-keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+@-moz-keyframes fadeOut{from{opacity:1;}to{opacity:0;}}
+@-moz-keyframes fade{from{opacity: 1;}to{opacity:0.75;}}

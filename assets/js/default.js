@@ -81,3 +81,19 @@ function openMenu()
 	}
 	goDown = !goDown;
 }
+
+function createForm()
+{
+	alert("creating form");
+}
+
+function recordVideo()
+{
+	alert("redirecting to youtube");
+}
+
+function sendEmail()
+{
+	alert("sending email");
+}
+

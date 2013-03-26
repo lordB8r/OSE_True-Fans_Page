@@ -7,15 +7,15 @@
 		<div id="top">
 				<div id="title">Open Source Ecology</div>
 
-				<div class="subtitle">Help us accelerate the growth of the next economy</div>
+				<div id="firstSub">Help us accelerate the growth of the next economy</div>
 
 				<br/>
 
-				<input type="image" id="joinus" onclick="openMenu()"src="assets/img/joinus.png"/>
+				<input type="image" id="joinUsButton" onclick="openMenu()"src="assets/img/joinus.png"/>
 
 				<br/>
 
-				<div class="subtitle"><span id="trueFans">True Fans</span> pledge a monthly commitment of $10 or more to support our work</div>
+				<div id="secondSub"><span id="trueFans">True Fans</span> pledge a monthly commitment of $10 or more to support our work</div>
 
 				<table  class="sponsers">
 					<tr>
@@ -32,18 +32,12 @@
 
 		<table class="buttons" id="tableButtons">
 			<tr>
-				<td class="buttonCell"><input class="joinUsButton" type="image" id="joinForm" onclick="" src="assets/img/joinform.png"/></td>
+				<td class="buttonCell"><input class="menuButton" type="image" id="joinForm" onclick="createForm()" src="assets/img/joinform.png"/><b>Join Us!</b></td>
 				
-				<td class="buttonCell"><input class="joinUsButton" type="image" id="takeVid" onclick="" src="assets/img/makeavideo.png"/></td>
+				<td class="buttonCell"><input class="menuButton" type="image" id="takeVid" onclick="recordVideo()" src="assets/img/makeavideo.png"/><b>Make a Video!</b></td>
 				
-				<td class="buttonCell"><input class="joinUsButton" type="image" id="emailUs" onclick="" src="assets/img/sendittous.png"/></td>
+				<td class="buttonCell"><input class="menuButton" type="image" id="emailUs" onclick="sendEmail()" src="assets/img/sendittous.png"/><b>Send it to Us!</b></td>
 			</tr>
-			<tr>
-				<td class="textCell">Join Us!</td>
-				<td class="textCell">Make a video!</td>
-				<td class="textCell">Send it to us!</td>
-			</tr>
-
 		</table>
 
 		<div id="bottom">
