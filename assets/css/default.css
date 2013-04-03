@@ -1,12 +1,13 @@
 html
 {
+	font-size: 100%;
 	background-color: #BBBBBB;
 	size: 100% 100%;
 }
 
 span#trueFans
 {
-	font-size: 155%;
+	font-size: 1.5em;
 	color: #37B6CE;
 	font-weight: bold;
 }
@@ -45,11 +46,10 @@ div#bottom
 div#title
 {
 	position: absolute;
-	top: 0;left: 22%;
-
-	font-size: 500%;
+	width: 100%;
+	text-align: center;
+	font-size: 5em;
 	font-weight: bold;
-
 	color: white;
 }
 
@@ -57,21 +57,26 @@ div#firstSub
 {
 	position: absolute;
 	top: 30%;
-	left: 28%;
-
-	font-size: 175%;
+	width: 100%;
 	text-align: center;
+	font-size: 1.5em;
 	color: white;
+}
+
+div#joinus
+{
+	position: absolute;
+	width: 100%;
+	top: 45%;
 }
 
 div#secondSub
 {
 	position: absolute;
-	top: 58%;
-	left: 13%;
-
-	font-size: 175%;
 	text-align: center;
+	top:60%;
+	width: 100%;
+	font-size: 1.5em;
 	color: white;
 }
 
@@ -79,22 +84,17 @@ div#sponsers
 {
 	position: absolute;
 	display: table;
-
 	width: 100%;
 	height: 40%;
-
-	top: 75%;
+	top: 68%;
 }
 
 div#menuButtons
 {
-	left: 0;
 	position: absolute;
 	display: table;
-
+	left: 0;
 	width: 100%;
-	height: 40%;
-
 	top: 48%;
 }
 
@@ -102,14 +102,13 @@ div.sponserCell
 {
 	display: table-cell;
 	width: 25%;
-	height: 100%;
+	vertical-align: middle;
 }
 
 div.menuBtnCell
 {
 	display: table-cell;
 	width: 25%;
-	height: 100%;
 	text-align: center;
 }
 
@@ -117,31 +116,26 @@ div.row
 {
 	display: table-row;
 	width: 100%;
-	height: 100%;
 }
 
 img#oshlogo
 {
-	width: 20%;
-	height: 40%;
+	width: 13%;
 }
 
 img#wikilogo
 {
-	width: 20%;
-	height: 20%;
+	width: 15%;
 }
 
 img#tedlogo
 {	
-	width: 25%;
-	height: 25%;
+	width: 20%;
 }
 
 img#sworthlogo
 {
-	width: 50%;
-	height: 25%;
+	width: 45%;
 }
 
 img.sponser
@@ -160,14 +154,10 @@ img.sponser:hover
 	
 input#joinUsButton
 {
-	position: absolute;
 	display: block;
-
-	width: 15%;
-	height: 15%;
-
-	top: 46%;
-	left: 42%;
+	width: 10%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 input#joinUsButton:hover
@@ -180,8 +170,7 @@ input#joinUsButton:hover
 input.menuButton
 {
 	display: block;
-	width: 30%;
-	height: 40%;
+	width: 25%;
     	margin-left: auto; 
     	margin-right: auto;
 }
@@ -236,23 +225,30 @@ input.menuButton:hover
 @-moz-keyframes slideUp{from{top:70%;}to{top:45%;}}
 @-moz-keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
 
-@media screen and (max-width: 200px){div#title{font-size: 75%; left: 21%; top: 15%;} div#firstSub{font-size: 35%; left: 14%; top: 25%;} div#secondSub{font-size: 35%; left: 0%; top: 45%;} span#trueFans{font-size: 55%;} input#joinUsButton{height: 5%; top: 33%;}}
-@media screen and (min-width: 200px) and (max-width: 250px){div#title{font-size: 75%; left: 23%; top: 15%;} div#firstSub{font-size: 35%; left: 18%; top: 25%;} div#secondSub{font-size: 35%; left: 0%; top: 45%;} span#trueFans{font-size: 55%;} input#joinUsButton{height: 5%; top: 33%;}}
-@media screen and (min-width: 250px) and (max-width: 300px){div#title{font-size: 100%; left: 21%; top: 15%;} div#firstSub{font-size: 65%; left: 8%; top: 25%;} div#secondSub{font-size: 65%; left: 0%; top: 45%;} span#trueFans{font-size: 70%;} input#joinUsButton{height: 8%; top: 33%;}}
-@media screen and (min-width: 300px) and (max-width: 350px){div#title{font-size: 125%; left: 20%; top: 15%;} div#firstSub{font-size: 80%; left: 8%; top: 25%;} div#secondSub{font-size: 80%; left: 0%; top: 45%;} span#trueFans{font-size: 85%;} input#joinUsButton{height: 8%; top: 33%;}}
-@media screen and (min-width: 350px) and (max-width: 400px){div#title{font-size: 150%; left: 20%; top: 15%;} div#firstSub{font-size: 95%; left: 6%; top: 25%;} div#secondSub{font-size: 95%; left: 0%; top: 45%;} span#trueFans{font-size: 100%;} input#joinUsButton{height: 8%; top: 34%;}}
-@media screen and (min-width: 400px) and (max-width: 450px){div#title{font-size: 225%; left: 10%; top: 13%;} div#firstSub{font-size: 110%; left: 6%; top: 30%;} div#secondSub{font-size: 110%; left: 0%; top: 55%;} span#trueFans{font-size: 115%;} input#joinUsButton{height: 10%; top: 42%;}}
-@media screen and (min-width: 450px) and (max-width: 500px){div#title{font-size: 250%; left: 10%; top: 13%;} div#firstSub{font-size: 125%; left: 6%; top: 30%;} div#secondSub{font-size: 125%; left: 0%; top: 55%;} span#trueFans{font-size: 130%;} input#joinUsButton{height: 10%; top: 42%;}}
-@media screen and (min-width: 500px) and (max-width: 550px){div#title{font-size: 275%; left: 13%; top: 11%;} div#firstSub{font-size: 140%; left: 8%; top: 30%;} div#secondSub{font-size: 140%; left: 0%; top: 55%;} span#trueFans{font-size: 145%;} input#joinUsButton{height: 10%; top: 44%;}}
-@media screen and (min-width: 550px) and (max-width: 600px){div#title{font-size: 300%; left: 11%; top: 5%;} div#firstSub{font-size: 155%; left: 6%; top: 25%;} div#secondSub{font-size: 155%; left: 0%; top: 45%;} span#trueFans{font-size: 160%;} input#joinUsButton{height: 10%; top: 38%;}}
-@media screen and (min-width: 600px) and (max-width: 650px){div#title{font-size: 325%; left: 11%; top: 2%;} div#firstSub{font-size: 155%; left: 10%; top: 25%;} div#secondSub{font-size: 155%; left: 0%; top: 45%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 38%;}}
-@media screen and (min-width: 650px) and (max-width: 700px){div#title{font-size: 350%; left: 11%; top: 2%;} div#firstSub{font-size: 155%; left: 12%; top: 25%;} div#secondSub{font-size: 155%; left: 0%; top: 45%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 38%;}}
-@media screen and (min-width: 700px) and (max-width: 750px){div#title{font-size: 375%; left: 11%; top: 2%;} div#firstSub{font-size: 170%; left: 10%; top: 25%;} div#secondSub{font-size: 170%; left: 0%; top: 45%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 38%;}}
-@media screen and (min-width: 750px) and (max-width: 800px){div#title{font-size: 400%; left: 13%; top: 2%;} div#firstSub{font-size: 170%; left: 15%; top: 25%;} div#secondSub{font-size: 170%; left: 0%; top: 45%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 38%;}}
-@media screen and (min-width: 800px) and (max-width: 850px){div#title{font-size: 425%; left: 13%; top: 2%;} div#firstSub{font-size: 170%; left: 15%; top: 28%;} div#secondSub{font-size: 170%; left: 0%; top: 48%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 40%;}}
-@media screen and (min-width: 850px) and (max-width: 900px){div#title{font-size: 450%; left: 13%; top: 2%;}  div#firstSub{font-size: 170%; left: 18%; top: 28%;} div#secondSub{font-size: 170%; left: 0%; top: 48%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 40%;}}
-@media screen and (min-width: 900px) and (max-width: 950px){div#title{font-size: 475%; left: 13%; top: 0%;} div#firstSub{font-size: 170%; left: 18%; top: 30%;} div#secondSub{font-size: 170%; left: 0%; top: 48%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 42%;}}
-@media screen and (min-width: 950px) and (max-width: 1000px){div#title{font-size: 475%; left: 13%; top: 0%;} div#firstSub{font-size: 170%; left: 18%; top: 30%;} div#secondSub{font-size: 170%; left: 2%; top: 48%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 42%;}}
-@media screen and (min-width: 1000px) and (max-width: 1050px){div#title{font-size: 475%; left: 15%; top: 0%;} div#firstSub{font-size: 170%; left: 20%; top: 30%;} div#secondSub{font-size: 170%; left: 2%; top: 48%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 42%;}}
-@media screen and (min-width: 1050px) and (max-width: 1100px){div#title{font-size: 475%; left: 20%; top: 0%;} div#firstSub{font-size: 170%; left: 27%; top: 30%;} div#secondSub{font-size: 170%; left:8%; top: 55%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 45%;}}
+@media screen and (min-width: 768px) and (max-width: 980px){div#title{font-size: 4em;} div#firstSub{font-size: 1.25em;} div#secondSub{font-size: 1.25em;}
+				     img#oshlogo{width: 20%;} img#wikilogo{width: 25%;} img#tedlogo{width: 30%;} img#sworthlogo{width: 55%;}
+				     @keyframes slideDown{from{top:45%;}to{top:65%;}}
+				     @keyframes slideUp{from{top:65%;}to{top:45%;}}
+				     @-webkit-keyframes slideDown{from{top:45%;}to{top:65%;}}
+				     @-webkit-keyframes slideUp{from{top:65%;}to{top:45%;}}
+				     @-moz-keyframes slideDown{from{top:45%;}to{top:65%;}}
+				     @-moz-keyframes slideUp{from{top:65%;}to{top:45%;}}}
+
+@media screen and (max-width: 767px){div#title{font-size: 3em;} div#firstSub{font-size: 1em;} div#secondSub{font-size: 1em;}
+				     img#oshlogo{width: 20%;} img#wikilogo{width: 25%;} img#tedlogo{width: 30%;} img#sworthlogo{width: 65%;}
+				     @keyframes slideDown{from{top:45%;}to{top:62%;}}
+				     @keyframes slideUp{from{top:62%;}to{top:45%;}}
+				     @-webkit-keyframes slideDown{from{top:45%;}to{top:62%;}}
+				     @-webkit-keyframes slideUp{from{top:62%;}to{top:45%;}}
+				     @-moz-keyframes slideDown{from{top:45%;}to{top:62%;}}
+				     @-moz-keyframes slideUp{from{top:62%;}to{top:45%;}}}
+
+@media screen and (max-width: 480px){div#title{font-size: 2em;} div#firstSub{font-size: .75em;} div#secondSub{font-size: .75em;}
+				     img#oshlogo{width: 30%;} img#wikilogo{width: 30%;} img#tedlogo{width: 35%;} img#sworthlogo{width: 65%;}
+				     @keyframes slideDown{from{top:45%;}to{top:60%;}}
+				     @keyframes slideUp{from{top:60%;}to{top:45%;}}
+				     @-webkit-keyframes slideDown{from{top:45%;}to{top:60%;}}
+				     @-webkit-keyframes slideUp{from{top:60%;}to{top:45%;}}
+				     @-moz-keyframes slideDown{from{top:45%;}to{top:60%;}}
+				     @-moz-keyframes slideUp{from{top:60%;}to{top:45%;}}}
 

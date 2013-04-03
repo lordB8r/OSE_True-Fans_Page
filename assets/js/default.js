@@ -19,7 +19,7 @@ function createForm()
 
 function recordVideo()
 {
-	alert("redirecting to youtube");
+	window.location("http://www.youtube.com/upload");
 }
 
 function sendEmail()
