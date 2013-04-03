@@ -4,6 +4,13 @@ html
 	size: 100% 100%;
 }
 
+span#trueFans
+{
+	font-size: 155%;
+	color: #37B6CE;
+	font-weight: bold;
+}
+
 div#top
 {
 	position: fixed;
@@ -33,22 +40,6 @@ div#bottom
 	border-top-color: gray;
 
 	background-color: black;
-
-	animation-play-state: paused;
-	animation-duration: 3s;
-	animation-name: slideDown;
-	animation-fill-mode: forwards;
-
-	-webkit-animation-play-state: paused;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-name: slideDown;
-	-webkit-animation-fill-mode: forwards;
-
-	-moz-animation-play-state: paused;
-	-moz-animation-duration: 3s;
-	-moz-animation-name: slideDown;
-	-moz-animation-fill-mode: forwards;
-
 }
 
 div#title
@@ -84,50 +75,83 @@ div#secondSub
 	color: white;
 }
 
+div#sponsers
+{
+	position: absolute;
+	display: table;
+
+	width: 100%;
+	height: 40%;
+
+	top: 75%;
+}
+
+div#menuButtons
+{
+	left: 0;
+	position: absolute;
+	display: table;
+
+	width: 100%;
+	height: 40%;
+
+	top: 48%;
+}
+
+div.sponserCell
+{
+	display: table-cell;
+	width: 25%;
+	height: 100%;
+}
+
+div.menuBtnCell
+{
+	display: table-cell;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+}
+
+div.row
+{
+	display: table-row;
+	width: 100%;
+	height: 100%;
+}
+
 img#oshlogo
 {
-	display: block;
 	width: 20%;
 	height: 40%;
-    	margin-left: auto; 
-    	margin-right: auto;
 }
 
 img#wikilogo
 {
-	display: block;
-	width: 25%;
+	width: 20%;
 	height: 20%;
-    	margin-left: auto; 
-    	margin-right: auto;
 }
 
 img#tedlogo
 {	
-	display: block;	
-	width: 30%;
-	height: 30%;
-    	margin-left: auto; 
-    	margin-right: auto;
+	width: 25%;
+	height: 25%;
 }
 
 img#sworthlogo
 {
-	display: block;
 	width: 50%;
 	height: 25%;
+}
+
+img.sponser
+{
+	display: block;
     	margin-left: auto; 
     	margin-right: auto;
 }
 
-span#trueFans
-{
-	font-size: 155%;
-	color: #37B6CE;
-	font-weight: bold;
-}
-
-input#joinUsButton:hover
+img.sponser:hover
 {
 	animation: fade 0.25s forwards;
 	-webkit-animation: fade 0.25s forwards;
@@ -138,18 +162,26 @@ input#joinUsButton
 {
 	position: absolute;
 	display: block;
+
 	width: 15%;
 	height: 15%;
+
 	top: 46%;
 	left: 42%;
 }
 
+input#joinUsButton:hover
+{
+	animation: fade 0.25s forwards;
+	-webkit-animation: fade 0.25s forwards;
+	-moz-animation: fade 0.25s forwards;
+}
 
 input.menuButton
 {
 	display: block;
-	width: 35%;
-	height: 60%;
+	width: 30%;
+	height: 40%;
     	margin-left: auto; 
     	margin-right: auto;
 }
@@ -161,68 +193,48 @@ input.menuButton:hover
 	-moz-animation: fade 0.25s forwards;
 }
 
-table.sponsers
+.Down
 {
-	position: absolute;
-	bottom: 0%;
-
-	table-layout: fixed;
-	border-spacing: 0px;
-
-	margin-left: auto;
-	margin-right: auto;
-}
-
-table.sponsers td.sponserCell:hover
-{
-	animation: fade 0.25s forwards;
-	-webkit-animation: fade 0.25s forwards;
-	-moz-animation: fade 0.25s forwards;
-}
-
-table.sponsers td.sponserCell
-{
-	width: 12%;	
-}
-
-table.buttons
-{
-	opacity: 0;
-	position: absolute;
-	table-layout: fixed;
-	border-spacing: 0px;
-	width: 66%;
-	height: 20%;
-	top: 48%;
-	margin-left: 15%;
-
-
-	animation-play-state: paused;
-	animation-duration: 2s;
-	animation-delay: 1s;
-	animation-name: fadeIn;
+	animation-duration: 3s;
+	animation-name: slideDown;
 	animation-fill-mode: forwards;
 
-	-webkit-animation-play-state: paused;
-	-webkit-animation-duration: 2s;
-	-webkit-animation-delay: 1s;
-	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-name: slideDown;
 	-webkit-animation-fill-mode: forwards;
 
-	-moz-animation-play-state: paused;
-	-moz-animation-duration: 2s;
-	-moz-animation-delay: 1s;
-	-moz-animation-name: fadeIn;
+	-moz-animation-duration: 3s;
+	-moz-animation-name: slideDown;
 	-moz-animation-fill-mode: forwards;
 }
 
-table.buttons td.buttonCell
+.Up
 {
-	height: 25%;
-	width: 22%;
-	padding: 0px;
-	text-align: center;
+	animation-duration: 3s;
+	animation-name: slideUp;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-duration: 3s;
+	-webkit-animation-name: slideUp;
+	-webkit-animation-fill-mode: forwards;
+
+	-moz-animation-duration: 3s;
+	-moz-animation-name: slideUp;
+	-moz-animation-fill-mode: forwards;
+
 }
+
+@keyframes slideDown{from{top:45%;}to{top:70%;}}
+@keyframes slideUp{from{top:70%;}to{top:45%;}}
+@keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
+
+@-webkit-keyframes slideDown{from{top:45%;}to{top:70%;}}
+@-webkit-keyframes slideUp{from{top:70%;}to{top:45%;}}
+@-webkit-keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
+
+@-moz-keyframes slideDown{from{top:45%;}to{top:70%;}}
+@-moz-keyframes slideUp{from{top:70%;}to{top:45%;}}
+@-moz-keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
 
 @media screen and (max-width: 200px){div#title{font-size: 75%; left: 21%; top: 15%;} div#firstSub{font-size: 35%; left: 14%; top: 25%;} div#secondSub{font-size: 35%; left: 0%; top: 45%;} span#trueFans{font-size: 55%;} input#joinUsButton{height: 5%; top: 33%;}}
 @media screen and (min-width: 200px) and (max-width: 250px){div#title{font-size: 75%; left: 23%; top: 15%;} div#firstSub{font-size: 35%; left: 18%; top: 25%;} div#secondSub{font-size: 35%; left: 0%; top: 45%;} span#trueFans{font-size: 55%;} input#joinUsButton{height: 5%; top: 33%;}}
@@ -244,20 +256,3 @@ table.buttons td.buttonCell
 @media screen and (min-width: 1000px) and (max-width: 1050px){div#title{font-size: 475%; left: 15%; top: 0%;} div#firstSub{font-size: 170%; left: 20%; top: 30%;} div#secondSub{font-size: 170%; left: 2%; top: 48%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 42%;}}
 @media screen and (min-width: 1050px) and (max-width: 1100px){div#title{font-size: 475%; left: 20%; top: 0%;} div#firstSub{font-size: 170%; left: 27%; top: 30%;} div#secondSub{font-size: 170%; left:8%; top: 55%;} span#trueFans{font-size: 175%;} input#joinUsButton{height: 12%; top: 45%;}}
 
-@keyframes slideDown{from{top:45%;}to{top:70%;}}
-@keyframes slideUp{from{top:70%;}to{top:45%;}}
-@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-@keyframes fadeOut{from{opacity:1;}to{opacity:0;}}
-@keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
-
-@-webkit-keyframes slideDown{from{top:45%;}to{top:70%;}}
-@-webkit-keyframes slideUp{from{top:70%;}to{top:45%;}}
-@-webkit-keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-@-webkit-keyframes fadeOut{from{opacity:1;}to{opacity:0;}}
-@-webkit-keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
-
-@-moz-keyframes slideDown{from{top:45%;}to{top:70%;}}
-@-moz-keyframes slideUp{from{top:70%;}to{top:45%;}}
-@-moz-keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-@-moz-keyframes fadeOut{from{opacity:1;}to{opacity:0;}}
-@-moz-keyframes fade{from{opacity: 1;}to{opacity:0.75;}}

@@ -5,43 +5,42 @@
 	</head>
 	<body onload="init()">
 		<div id="top">
-				<div id="title">Open Source Ecology</div>
+			<div id="title">Open Source Ecology</div>
 
-				<div id="firstSub">Help us accelerate the growth of the next economy</div>
+			<div id="firstSub">Help us accelerate the growth of the next economy</div>
 
-				<br/>
+			<br/>
 
-				<input type="image" id="joinUsButton" onclick="openMenu()"src="assets/img/joinus.png"/>
+			<input type="image" id="joinUsButton" onClick="openMenu()" src="assets/img/joinus.png"/>
 
-				<br/>
+			<br/>
 
-				<div id="secondSub"><span id="trueFans">True Fans</span> pledge a monthly commitment of $10 or more to support our work</div>
+			<div id="secondSub"><span id="trueFans">True Fans</span> pledge a monthly commitment of $10 or more to support our work</div>
 
-				<table  class="sponsers">
-					<tr>
-						<td class="sponserCell"><a href="http://www.oshwa.org/"><img id="oshlogo" src="assets/img/oshlogo.png"/></a></td>
+			<div id="sponsers">
+				<div class="row">
+					<div class="sponserCell"><a href="http://www.oshwa.org/"><img id="oshlogo" class="sponser" src="assets/img/oshlogo.png"/></a></div>
 
-						<td class="sponserCell"><a href="http://www.wikispeed.com/"><img id="wikilogo" src="assets/img/wikilogo.png"/></a></td>
+					<div class="sponserCell"><a href="http://www.wikispeed.com/"><img id="wikilogo" class="sponser" src="assets/img/wikilogo.png"/></a></div>
 
-						<td class="sponserCell"><a href="http://www.ted.com/fellows"><img id="tedlogo" src="assets/img/tedlogo.png"/></a></td>
+					<div class="sponserCell"><a href="http://www.ted.com/fellows"><img id="tedlogo" class="sponser" src="assets/img/tedlogo.png"/></a></div>
 
-						<td class="sponserCell"><a href="http://www.shuttleworthfoundation.org"><img id="sworthlogo" src="assets/img/shuttlelogo.png"/></a></td>
-					</tr>
-				</table>
+					<div class="sponserCell"><a href="http://www.shuttleworthfoundation.org"><img id="sworthlogo" class="sponser" src="assets/img/shuttlelogo.png"/></a></div>
+				</div>
+			</div>
 		</div>
 
-		<table class="buttons" id="tableButtons">
-			<tr>
-				<td class="buttonCell"><input class="menuButton" type="image" id="joinForm" onclick="createForm()" src="assets/img/joinform.png"/><b>Join Us!</b></td>
-				
-				<td class="buttonCell"><input class="menuButton" type="image" id="takeVid" onclick="recordVideo()" src="assets/img/makeavideo.png"/><b>Make a Video!</b></td>
-				
-				<td class="buttonCell"><input class="menuButton" type="image" id="emailUs" onclick="sendEmail()" src="assets/img/sendittous.png"/><b>Send it to Us!</b></td>
-			</tr>
-		</table>
-
-		<div id="bottom">
+		<div id="menuButtons">
+			<div class="row">
+				<div class="menuBtnCell"><input class="menuButton" type="image" onclick="createForm()" src="assets/img/joinform.png"/><b>Join Us!</b></div>
+			
+				<div class="menuBtnCell"><input class="menuButton" type="image" onclick="recordVideo()" src="assets/img/makeavideo.png"/><b>Make a Video!</b></div>
+			
+				<div class="menuBtnCell"><input class="menuButton" type="image" onclick="sendEmail()" src="assets/img/sendittous.png"/><b>Send it to Us!</b></div>
+			</div>
 		</div>
+
+		<div id="bottom"></div>
 		
 	</body>
 </html>
