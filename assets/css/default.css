@@ -12,6 +12,27 @@ span#trueFans
 	font-weight: bold;
 }
 
+div#signupForm
+{
+	position: absolute;
+	display: none;
+
+	width: 0%;
+	height: 0%;
+	
+	left: 0;
+	top: 0;
+
+	margin-left: 50%;
+	margin-top: 25%;
+
+	border-style: solid;
+	border-width: 5px;
+	border-color: gray;
+	z-index: 1;
+	background-color: black;
+}
+
 div#top
 {
 	position: fixed;
@@ -22,6 +43,7 @@ div#top
 	border-bottom-style: solid;
 	border-bottom-width: 5px;
 	border-bottom-color: gray;
+	z-index: 0;
 
 	background-image: url(../img/ose_banner.jpg);
 	background-repeat: no-repeat;
@@ -39,6 +61,7 @@ div#bottom
 	border-top-style: solid;
 	border-top-width: 5px;
 	border-top-color: gray;
+	z-index: 0;
 
 	background-color: black;
 }
@@ -213,17 +236,61 @@ input.menuButton:hover
 
 }
 
+.grow
+{
+	animation-duration: 3s, 3s;
+	animation-name: growHeight, growWidth;
+	animation-fill-mode: forwards, forwards;
+
+	-webkit-animation-duration: 3s, 3s;
+	-webkit-animation-name: growHeight, growWidth;
+	-webkit-animation-fill-mode: forwards, forwards;
+
+	-moz-animation-duration: 3s, 3s;
+	-moz-animation-name: growHeight, growWidth;
+	-moz-animation-fill-mode: forwards, forwards;
+}
+
+
+.shrink
+{
+	animation-duration: 3s, 3s;
+	animation-name: shrinkHeight, shrinkWidth;
+	animation-fill-mode: forwards, forwards;
+
+	-webkit-animation-duration: 3s, 3s;
+	-webkit-animation-name: shrinkHeight, shrinkWidth;
+	-webkit-animation-fill-mode: forwards, forwards;
+
+	-moz-animation-duration: 3s, 3s;
+	-moz-animation-name: shrinkHeight, shrinkWidth;
+	-moz-animation-fill-mode: forwards, forwards;
+
+}
+
 @keyframes slideDown{from{top:45%;}to{top:70%;}}
 @keyframes slideUp{from{top:70%;}to{top:45%;}}
 @keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
+@keyframes growHeight{from{height:0%; left:0%; top:0%; }to{height:50%; left:-25%; top:-25%;}}
+@keyframes growWidth{from{width:0%; left: 0%; top:0%;}to{width:50%; left:-25%; top:-25%;}}
+@keyframes shrinkHeight{from{height:50%; left:-25%; top:-25%; }to{height:0%; left:0%; top:0%;}}
+@keyframes shrinkWidth{from{width:50%; left: -25%; top:-25%;}to{width:0%; left:0%; top:0%;}}
 
 @-webkit-keyframes slideDown{from{top:45%;}to{top:70%;}}
 @-webkit-keyframes slideUp{from{top:70%;}to{top:45%;}}
 @-webkit-keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
+@-webkit-keyframes growHeight{from{height:0%; left:0%; top:0%; }to{height:50%; left:-25%; top:-25%;}}
+@-webkit-keyframes growWidth{from{width:0%; left: 0%; top:0%;}to{width:50%; left:-25%; top:-25%;}}
+@-webkit-keyframes shrinkHeight{from{height:50%; left:-25%; top:-25%; }to{height:0%; left:0%; top:0%;}}
+@-webkit-keyframes shrinkWidth{from{width:50%; left: -25%; top:-25%;}to{width:0%; left:0%; top:0%;}}
 
 @-moz-keyframes slideDown{from{top:45%;}to{top:70%;}}
 @-moz-keyframes slideUp{from{top:70%;}to{top:45%;}}
 @-moz-keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
+@-moz-keyframes growHeight{from{height:0%; left:0%; top:0%; }to{height:50%; left:-25%; top:-25%;}}
+@-moz-keyframes growWidth{from{width:0%; left: 0%; top:0%;}to{width:50%; left:-25%; top:-25%;}}
+@-moz-keyframes shrinkHeight{from{height:50%; left:-25%; top:-25%; }to{height:0%; left:0%; top:0%;}}
+@-moz-keyframes shrinkWidth{from{width:50%; left: -25%; top:-25%;}to{width:0%; left:0%; top:0%;}}
 
 @media screen and (min-width: 768px) and (max-width: 980px){div#title{font-size: 4em;} div#firstSub{font-size: 1.25em;} div#secondSub{font-size: 1.25em;}
 				     img#oshlogo{width: 20%;} img#wikilogo{width: 25%;} img#tedlogo{width: 30%;} img#sworthlogo{width: 55%;}

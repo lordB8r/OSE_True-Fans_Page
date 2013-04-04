@@ -1,6 +1,3 @@
-function init()
-{}
-
 function openMenu()
 {
 	var bottom = document.getElementById("bottom");
@@ -14,12 +11,22 @@ function openMenu()
 
 function createForm()
 {
-	alert("creating form");
+	var sign = document.getElementById("signupForm");
+	sign.style.display = "block";
+	sign.className = "grow";
+
+}
+
+function submitForm()
+{
+	var sign = document.getElementById("signupForm");
+	sign.style.display = "none";
+	sign.className = "shrink";
 }
 
 function recordVideo()
 {
-	window.location("http://www.youtube.com/upload");
+	window.location = "http://www.youtube.com/upload";
 }
 
 function sendEmail()
