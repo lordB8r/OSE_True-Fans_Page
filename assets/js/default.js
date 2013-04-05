@@ -31,6 +31,6 @@ function recordVideo()
 
 function sendEmail()
 {
-	alert("sending email");
+	window.location = "mailto:matt@zavteq.com?Subject=My%20Video&body=Please%20put%20the%20link%20to%20your%20video%20below...";
 }
 
