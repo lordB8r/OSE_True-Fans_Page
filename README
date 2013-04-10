@@ -4,7 +4,7 @@ Created by:	Zavteq, inc.
 
 Designed by: 	Open Source Ecology
 
-Developers: 	Matthew Pfister and Dan T.
+Developers: 	Matthew Pfister and Dan Tocila
 
 ****************************/
 
@@ -15,3 +15,35 @@ OSE Website
 		CSS3 animations for slide down menu and fading buttons.
 		Functional input buttons.
 		JS determines which settings to use based on browser.
+
++ !-----------Daniel Tocila's instructions--------!
+
+The html file uses a script to access a spreadsheet. The spreadsheet is a public
+Google Drive spreadsheet. In order to make a spreadsheet public, you click on the
+share button and select the global option. (Make sure you allow only viewing rather
+than public editing. If you enable public editing, anyone can ruin the spreadsheet's
+formula by inserting foreign data or deleting crucial information.)
+
+The first column is for usernames, the second column is for thumbnail links, and the 
+third column is for video links. For now, clicking on a thumbnail redirects you to
+Youtube's homepage. To redirect to a specific video, you could add a specific video
+link in the video column. 
+
+Since the spreadsheet is publicly available on Google Drive, any modifications will 
+be reflected in the webpage the next time the user refreshes the page. For example, 
+if the spreadsheet has data for five users, the webpage will display five thumbnails.
+However, if I add data for five additional users, refreshing the webpage will display
+ten thumbnails. New users can be added to the spreadsheet whenever it is necessary. 
+The script will take that information and dynamically create HTML that displays the
+new thumbnails as a part of the image grid.
+
+In order to modify the spreadsheet, you need to be given permission. If you want to use
+your own spreadsheet, you need to make a spreadsheet, share it so that it's public,
+and get the spreadsheet key. The spreadsheet key is the string between the "?key=" and the 
+"#gid-0"parts of the spreadsheet's URL. Once you know your key, go into the html file
+and paste it into the PASTE_KEY_HERE section of the following code
+
+$.getJSON( "https://spreadsheets.google.com/feeds/list/PASTE_KEY_HERE/od6/public/values?alt=json-in-script&callback=?",
+
+Then modify the script as necessary, if you're interested in doing something else with the data.
+
