@@ -47,3 +47,14 @@ $.getJSON( "https://spreadsheets.google.com/feeds/list/PASTE_KEY_HERE/od6/public
 
 Then modify the script as necessary, if you're interested in doing something else with the data.
 
+Limitations: 
+
+1) Currently, all the images must be the same size in order to properly align. I will be working
+on JavaScript to resize images into a standard size.
+
+2) It does not yet display a username when you hover over an image. But that will be added
+in an update.
+
+3) There are no specific videos for me to work with at this point in time, so
+the video URL is the same for all the rows. In actuality, the video column would have
+links to specific videos. These videos would correspond with the user's thumbnail.
