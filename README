@@ -1,4 +1,4 @@
-/****************************
+﻿/****************************
 
 Created by:	Zavteq, inc.
 
@@ -9,9 +9,32 @@ Developers: 	Matthew Pfister and Dan T.
 ****************************/
 
 
-OSE Website
+OSE True Fans Website
 
-	Implemented features:
-		CSS3 animations for slide down menu and fading buttons.
-		Functional input buttons.
-		JS determines which settings to use based on browser.
+	>Features:
+Responsive design
+Dynamically created table of user YouTube videos.
+Using Google Drive API.
+Videos are not embedded but are thumbnails which redirect the user to YouTube.
+CSS animations for Main Menu drop-down.
+Make a Video and Join us buttons redirect to YouTube's create a video and Paypal's payment pages, in separate tab (or window).
+Send it to us opens user's email service, and dynamically populates a new email.
+
+	>Things that need to be changed:
+In default.js file, found in the assets/js/ folder, under the function sendEmail(), replace Matt@Zavteq.com in window.location, with the desired OSE email address.
+
+To associate webpage with Paypal donations, do the following:
+
+1. Go to Paypal and either make an OSE account, or log into an existing account.
+
+2. Then click on the "Merchant Services" tab located near the top of the page, under the Paypal logo, in the list of blue tabs (it is the second to last one in the list).
+
+3. Then click on "create payment buttons for your website."
+
+4. When you arrive at the next page, fill out all the fields as desired, but make sure that you select donations from the drop down bar under "choose button type." When done click “create button” at the bottom of the page.
+
+5. On the next page, skip the instructions at the top and go to the section near the bottom that shows the HTML code. You will see two tabs one labeled "Website" and the other "Email" click on the "Email" tab, and copy the code that appears.
+
+6. Now go to the default.js file, in the assets/js/ folder, and under the function makeDonation(), replace the URL in window.open() with the copied code.
+
+		+ !------------ Dan add in your instructions here -------------!

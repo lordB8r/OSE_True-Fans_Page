@@ -9,24 +9,14 @@ function openMenu()
 		bottom.className = "Down";
 }
 
-function createForm()
+function makeDonation()
 {
-	var sign = document.getElementById("signupForm");
-	sign.style.display = "block";
-	sign.className = "grow";
-
-}
-
-function submitForm()
-{
-	var sign = document.getElementById("signupForm");
-	sign.style.display = "none";
-	sign.className = "shrink";
+	window.open("https://www.paypal.com/");
 }
 
 function recordVideo()
 {
-	window.location = "http://www.youtube.com/upload";
+	window.open("http://www.youtube.com/upload");
 }
 
 function sendEmail()
