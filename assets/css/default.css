@@ -82,7 +82,7 @@ div#secondSub
 	color: white;
 }
 
-div#sponsers
+div#sponsors
 {
 	position: absolute;
 	display: table;
@@ -100,7 +100,7 @@ div#menuButtons
 	top: 48%;
 }
 
-div.sponserCell
+div.sponsorCell
 {
 	display: table-cell;
 	width: 25%;
@@ -140,14 +140,14 @@ img#sworthlogo
 	width: 45%;
 }
 
-img.sponser
+img.sponsor
 {
 	display: block;
     	margin-left: auto; 
     	margin-right: auto;
 }
 
-img.sponser:hover
+img.sponsor:hover
 {
 	animation: fade 0.25s forwards;
 	-webkit-animation: fade 0.25s forwards;
