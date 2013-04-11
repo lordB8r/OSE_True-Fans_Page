@@ -5,6 +5,41 @@ html
 	size: 100% 100%;
 }
 
+body
+{
+	overflow: hidden;
+}
+
+ul 
+{
+	padding: 0;
+	margin: 0 auto;
+	list-style-type: none;	
+}
+
+ul li 
+{
+	padding: 0;
+        width: 25%;
+        float: left;
+}
+ 
+ul li img 
+{
+	display: block;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+}
+ 
+ul li img:hover
+{
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+}
+
 span#trueFans
 {
 	font-size: 1.5em;
@@ -15,39 +50,43 @@ span#trueFans
 div#top
 {
 	position: fixed;
-	top: 0px; left: 0px;
+	top: 0; left: 0;
 	width: 100%;
-	height: 45%;
-
-	border-bottom-style: solid;
-	border-bottom-width: 5px;
-	border-bottom-color: gray;
-	z-index: 0;
-
+	height: 43%;
 	background-image: url(../img/ose_banner.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+
+	border-bottom: 5px solid #4F4949;
+	
 }
 
 div#bottom
 {
 	position: fixed;
-	overflow: scroll;
-	top: 45%; left: 0px;
+	top: 43%; left:0;
 	width: 100%;
-	height: 65%;
-
-	border-top-style: solid;
-	border-top-width: 5px;
-	border-top-color: gray;
-	z-index: 0;
-
+	height: 57%;
 	background-color: black;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	margin: 0; padding: 0;
+	clear: both;
+
+	border-top: 5px solid #4F4949;
+}
+
+div#menuButtons
+{
+	position: fixed;
+ 	top: 45%; left: 0;
+	display: table;
+	width: 100%;
 }
 
 div#title
 {
-	position: absolute;
 	width: 100%;
 	text-align: center;
 	font-size: 5em;
@@ -57,8 +96,6 @@ div#title
 
 div#firstSub
 {
-	position: absolute;
-	top: 30%;
 	width: 100%;
 	text-align: center;
 	font-size: 1.5em;
@@ -67,16 +104,12 @@ div#firstSub
 
 div#joinus
 {
-	position: absolute;
 	width: 100%;
-	top: 45%;
 }
 
 div#secondSub
 {
-	position: absolute;
 	text-align: center;
-	top:60%;
 	width: 100%;
 	font-size: 1.5em;
 	color: white;
@@ -84,20 +117,8 @@ div#secondSub
 
 div#sponsors
 {
-	position: absolute;
 	display: table;
 	width: 100%;
-	height: 40%;
-	top: 68%;
-}
-
-div#menuButtons
-{
-	position: absolute;
-	display: table;
-	left: 0;
-	width: 100%;
-	top: 48%;
 }
 
 div.sponsorCell
@@ -215,101 +236,42 @@ input.menuButton:hover
 
 }
 
-@keyframes slideDown{from{top:45%;}to{top:70%;}}
-@keyframes slideUp{from{top:70%;}to{top:45%;}}
+@keyframes slideDown{from{top:43%;}to{top:68%;}}
+@keyframes slideUp{from{top:68%;}to{top:43%;}}
 @keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
 
-@-webkit-keyframes slideDown{from{top:45%;}to{top:70%;}}
-@-webkit-keyframes slideUp{from{top:70%;}to{top:45%;}}
+@-webkit-keyframes slideDown{from{top:43%;}to{top:68%;}}
+@-webkit-keyframes slideUp{from{top:68%;}to{top:43%;}}
 @-webkit-keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
 
-@-moz-keyframes slideDown{from{top:45%;}to{top:70%;}}
-@-moz-keyframes slideUp{from{top:70%;}to{top:45%;}}
+@-moz-keyframes slideDown{from{top:43%;}to{top:68%;}}
+@-moz-keyframes slideUp{from{top:68%;}to{top:43%;}}
 @-moz-keyframes fade{from{opacity: 1;}to{opacity:0.75;}}
 
 @media screen and (min-width: 768px) and (max-width: 980px){div#title{font-size: 4em;} div#firstSub{font-size: 1.25em;} div#secondSub{font-size: 1.25em;}
 				     img#oshlogo{width: 20%;} img#wikilogo{width: 25%;} img#tedlogo{width: 30%;} img#sworthlogo{width: 55%;}
-				     @keyframes slideDown{from{top:45%;}to{top:65%;}}
-				     @keyframes slideUp{from{top:65%;}to{top:45%;}}
-				     @-webkit-keyframes slideDown{from{top:45%;}to{top:65%;}}
-				     @-webkit-keyframes slideUp{from{top:65%;}to{top:45%;}}
-				     @-moz-keyframes slideDown{from{top:45%;}to{top:65%;}}
-				     @-moz-keyframes slideUp{from{top:65%;}to{top:45%;}}}
+				     @keyframes slideDown{from{top:43%;}to{top:63%;}}
+				     @keyframes slideUp{from{top:63%;}to{top:43%;}}
+				     @-webkit-keyframes slideDown{from{top:43%;}to{top:63%;}}
+				     @-webkit-keyframes slideUp{from{top:63%;}to{top:43%;}}
+				     @-moz-keyframes slideDown{from{top:43%;}to{top:63%;}}
+				     @-moz-keyframes slideUp{from{top:63%;}to{top:43%;}}}
 
 @media screen and (max-width: 767px){div#title{font-size: 3em;} div#firstSub{font-size: 1em;} div#secondSub{font-size: 1em;}
 				     img#oshlogo{width: 20%;} img#wikilogo{width: 25%;} img#tedlogo{width: 30%;} img#sworthlogo{width: 65%;}
-				     @keyframes slideDown{from{top:45%;}to{top:62%;}}
-				     @keyframes slideUp{from{top:62%;}to{top:45%;}}
-				     @-webkit-keyframes slideDown{from{top:45%;}to{top:62%;}}
-				     @-webkit-keyframes slideUp{from{top:62%;}to{top:45%;}}
-				     @-moz-keyframes slideDown{from{top:45%;}to{top:62%;}}
-				     @-moz-keyframes slideUp{from{top:62%;}to{top:45%;}}}
+				     @keyframes slideDown{from{top:43%;}to{top:60%;}}
+				     @keyframes slideUp{from{top:60%;}to{top:43%;}}
+				     @-webkit-keyframes slideDown{from{top:43%;}to{top:60%;}}
+				     @-webkit-keyframes slideUp{from{top:60%;}to{top:43%;}}
+				     @-moz-keyframes slideDown{from{top:43%;}to{top:60%;}}
+				     @-moz-keyframes slideUp{from{top:60%;}to{top:43%;}}}
 
 @media screen and (max-width: 480px){div#title{font-size: 2em;} div#firstSub{font-size: .75em;} div#secondSub{font-size: .75em;}
 				     img#oshlogo{width: 30%;} img#wikilogo{width: 30%;} img#tedlogo{width: 35%;} img#sworthlogo{width: 65%;}
-				     @keyframes slideDown{from{top:45%;}to{top:60%;}}
-				     @keyframes slideUp{from{top:60%;}to{top:45%;}}
-				     @-webkit-keyframes slideDown{from{top:45%;}to{top:60%;}}
-				     @-webkit-keyframes slideUp{from{top:60%;}to{top:45%;}}
-				     @-moz-keyframes slideDown{from{top:45%;}to{top:60%;}}
-				     @-moz-keyframes slideUp{from{top:60%;}to{top:45%;}}}
+				     @keyframes slideDown{from{top:43%;}to{top:58%;}}
+				     @keyframes slideUp{from{top:58%;}to{top:43%;}}
+				     @-webkit-keyframes slideDown{from{top:43%;}to{top:58%;}}
+				     @-webkit-keyframes slideUp{from{top:58%;}to{top:43%;}}
+				     @-moz-keyframes slideDown{from{top:43%;}to{top:58%;}}
+				     @-moz-keyframes slideUp{from{top:58%;}to{top:43%;}}}
 
-ul {
-	position: relative;
-    float: left;
-    width: 90%;
-    height: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    list-style-type: none;	
-}
-
-ul li {
-        width: 25%;
-        height: auto;
-        float: left;
-}
- 
-ul li img {
-        max-width: 99%;
-        height: auto;
-        padding: .1s%;
-        margin-top: .5%;
-        opacity: 0.5;
-        filter: alpha(opacity=50);
-}
- 
-ul li img:hover
-{
-        opacity: 1.0;
-        filter: alpha(opacity=100);
-}
- 
- 
-@media screen and (max-width: 480px) {
-        ul li{
-                width: 100%;
-                float: left;
-        }
-}
- 
-@media screen and (min-width: 480px) and (max-width: 600px) {
-        ul li{
-                width: 50%;
-                float: left;
-        }
-}
- 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
-        ul li{
-                width: 31.25%;
-                float: left;
-        }
-}
- 
-@media screen and (min-width: 1000px) and (max-width: 1280) {
-        ul li{
-                width: 22.91667%;
-                float: left;
-        }
-}
